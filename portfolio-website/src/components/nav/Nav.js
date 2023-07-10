@@ -11,46 +11,43 @@ import { useState } from 'react'
 /* save different links */
 
 const Nav = () => {
-  const [isActive, setActive] = useState(false)
+  const [isActive, setActive] = useState('#')
 
-  const toggleClass = () => {
-    setActive(!isActive)
-  }
+  //   const toggleClass = (e) => {
+  //     console.log(e.a)
+  //     setActive(e.target.href)
+  //   }
 
   return (
     <nav>
-      <a
-        href=''
-        className={this.state.active && 'active'}
-        onClick={() => this.setState({ active: !this.state.active })}
-      >
+      <a href='#' className={isActive === '#' ? 'active' : ''}>
         <FaHome />
       </a>
       <a
         href='#about'
-        className={isActive ? 'active' : null}
-        onClick={toggleClass}
+        onClick={() => setActive('#about')}
+        className={isActive === '#about' ? 'active' : ''}
       >
         <BsInfoCircle />
       </a>
       <a
         href='#experience'
-        className={isActive ? 'active' : null}
-        onClick={toggleClass}
+        onClick={() => setActive('#experience')}
+        className={isActive === '#experience' ? 'active' : ''}
       >
         <FaLaptopCode />
       </a>
       <a
         href='#portfolio'
-        className={isActive ? 'active' : null}
-        onClick={toggleClass}
+        onClick={() => setActive('#portfolio')}
+        className={isActive === '#portfolio' ? 'active' : ''}
       >
         <BsEmojiSunglasses />
       </a>
       <a
         href='#contact'
-        className={isActive ? 'active' : null}
-        onClick={toggleClass}
+        onClick={() => setActive('#contact')}
+        className={isActive === '#contact' ? 'active' : ''}
       >
         <MdMarkEmailRead />
       </a>

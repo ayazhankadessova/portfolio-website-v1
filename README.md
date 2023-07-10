@@ -26,3 +26,27 @@ Add & import
         <BsInfoCircle />
       </a>
 ```
+
+5. Show which section is active right now
+
+State current active as '#'
+Then, with every pressed section button -> change state inside the section
+
+```
+const [isActive, setActive] = useState('#')
+
+<a
+    href='#about'
+    onClick={() => setActive('#about')}
+    className={isActive === '#about' ? 'active' : ''}
+>
+<BsInfoCircle />
+</a>
+<a
+    href='#experience'
+    onClick={() => setActive('#experience')}
+    className={isActive === '#experience' ? 'active' : ''}
+>
+    <FaLaptopCode />
+</a>
+```
