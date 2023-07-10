@@ -26,8 +26,6 @@ https://colorhunt.co/palette/c2dedcece5c7cdc2ae116a7b
   --transition: all 400ms ease;
 
   /* make container change based on the width size */
-  --container-width-lg: 80%;
-
   --container-width-lg: 78%;
   --container-width-md: 89%;
   --container-width-sm: 91%;
@@ -86,6 +84,7 @@ section > h2 {
   color: var(--color-light);
 }
 
+/* links (github/linkedin) -> on hover, make lighter */
 a {
   color: var(--color-primary);
   transition: var(--transition);
