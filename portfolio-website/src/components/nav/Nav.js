@@ -20,7 +20,11 @@ const Nav = () => {
 
   return (
     <nav>
-      <a href='#' className={isActive === '#' ? 'active' : ''}>
+      <a
+        href='#'
+        onClick={() => setActive('#')}
+        className={isActive === '#' ? 'active' : ''}
+      >
         <FaHome />
       </a>
       <a

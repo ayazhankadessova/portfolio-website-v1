@@ -1,0 +1,10 @@
+.about__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__cards {
+  display: flex;
+  gap: 2rem;
+}
