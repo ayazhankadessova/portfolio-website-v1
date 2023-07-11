@@ -1,10 +1,92 @@
 .about__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
+
+  color: white;
 }
 
+/* left side */
+
+.about__me {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  /* padding: 3rem; */
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  display: grid;
+  place-items: center;
+}
+
+.about__me-image {
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(14deg);
+  transition: var(--transition);
+}
+
+.about__me-image:hover {
+  transform: rotate(0deg);
+  transition: var(--transition);
+}
+
+/* right side */
+
+/* 3 cards */
 .about__cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+}
+
+/* for every card */
+.about__card {
+  background: var(--color-bg-variant);
+
+  /* TODO: check which is better */
+  /* background: var(--color-primary-variant); */
+
+  border-radius: 1.5rem;
+  border: 1.5px solid transparent;
+  padding: 1.5rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+/* change on hover */
+
+.about__card:hover {
+  background: transparent;
+  border-color: var(--color-bg-variant);
+  transition: var(--transition);
+
+  cursor: pointer;
+}
+
+/* Icons */
+
+.about__icon {
+  font-size: 1.5rem;
+  color: var(--color-text);
+  margin-bottom: 0.2rem;
+}
+
+.about__card > h5 {
+  font-size: 0.9rem;
+}
+
+.about__card > small {
+  font-size: 0.7rem;
+  color: var(--color-light);
+}
+
+.about__content > p {
+  /* top right bottom left */
+  margin: 2rem 0 2.6rem 0;
+  color: var(--color-white);
 }

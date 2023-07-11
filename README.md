@@ -50,3 +50,28 @@ const [isActive, setActive] = useState('#')
     <FaLaptopCode />
 </a>
 ```
+
+6. Height will always match the width
+
+```
+.about_me {
+    width: 100%
+    aspect-ratio: 1/1;
+}
+```
+
+7. Make transition smooth, add transition bot to original object & the one w/ hover:
+
+```
+.about__card{
+...
+  transition: var(--transition);
+}
+
+
+.about__card:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  transition: var(--transition);
+}
+```
