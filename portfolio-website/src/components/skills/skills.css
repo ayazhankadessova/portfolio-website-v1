@@ -1,0 +1,83 @@
+.container.experience__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  /* color: white; */
+}
+
+/* for every card */
+.experience__container > div {
+  background: var(--color-bg-variant);
+
+  /* TODO: check which is better */
+  /* background: var(--color-primary-variant); */
+
+  border-radius: 1.5rem;
+  border: 1.5px solid transparent;
+  padding: 2.4rem 5rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+/* change on hover */
+
+.experience__container > div:hover {
+  background: transparent;
+  border-color: var(--color-bg-variant);
+  transition: var(--transition);
+
+  cursor: pointer;
+}
+
+.experience__container > div h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.experience__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+}
+
+.experience__details {
+  display: flex;
+  gap: 1rem;
+}
+
+.experience__details-icon {
+  margin-top: 6px;
+  color: var(--color-primary);
+}
+
+/* Media Queries: Medium Devices */
+
+@media screen and (max-width: 1024px) {
+  .experience__container {
+    grid-template-columns: 1fr;
+  }
+
+  .experience__container > div {
+    width: 95%;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .experience__content p {
+    padding: 1rem;
+  }
+}
+
+/* Media Queries: Small Devices */
+
+@media screen and (max-width: 600px) {
+  .experience__container {
+    gap: 1rem;
+  }
+
+  .experience__container > div {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+}
