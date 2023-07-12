@@ -1,9 +1,10 @@
-.container.experience__container {
+.experience__container {
   display: grid;
 
   /*TODO: grid not correct*/
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem;
+  padding: 2rem;
 }
 
 .experience {
@@ -53,4 +54,32 @@
   color: var(--color-primary);
   font-size: 1.2rem;
   margin-top: 0.2rem;
+}
+
+/* Media Queries: Medium Devices */
+
+@media screen and (max-width: 1024px) {
+  /* put 3 cards in 2 colums */
+  .experience__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  /* top right&left bottom */
+  .experience {
+    height: auto;
+  }
+}
+
+/* Media Queries: Small Devices */
+@media screen and (max-width: 600px) {
+  .experience__container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* top right&left bottom */
+  .experience {
+    height: auto;
+  }
 }

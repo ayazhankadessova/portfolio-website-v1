@@ -81,3 +81,5 @@ const [isActive, setActive] = useState('#')
 ---
 
 1. Fix Skills cards to be left aligned
+2. Add Experience -> place , date
+3. Check skills section -> css of card
