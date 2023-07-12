@@ -83,3 +83,14 @@ const [isActive, setActive] = useState('#')
 1. Fix Skills cards to be left aligned
 2. Add Experience -> place , date
 3. Check skills section -> css of card
+4. Don't want it to be fully transaprent:
+
+```
+.portfolio__item:hover {
+  background: rgba(var(--color-bg-variant), 0.5); #doesnt work
+  border-color: var(--color-bg-variant);
+  transition: var(--transition);
+
+  cursor: pointer;
+}
+```
