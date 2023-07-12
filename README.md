@@ -75,3 +75,9 @@ const [isActive, setActive] = useState('#')
   transition: var(--transition);
 }
 ```
+
+8. For cards ,use grid-template-columns
+
+---
+
+1. Fix Skills cards to be left aligned

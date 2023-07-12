@@ -1,0 +1,56 @@
+.container.experience__container {
+  display: grid;
+
+  /*TODO: grid not correct*/
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.experience {
+  background: var(--color-bg-variant);
+  border-radius: 0 0 2rem 2rem;
+  border: 1px solid;
+
+  border-color: var(--color-bg-variant);
+  transition: var(--transition);
+
+  cursor: pointer;
+}
+
+.experience:hover {
+  background: transparent;
+  border-color: var(--color-bg-variant);
+  transition: var(--transition);
+
+  cursor: pointer;
+}
+
+.experience__head {
+  background: var(--color-primary);
+  padding: 2rem;
+  border-radius: 0 0 2rem 2rem;
+  /* x y axis rgba */
+  box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.experience__head > h3 {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.experience_responsibilities {
+  padding: 2rem;
+}
+
+.experience_responsibilities > li {
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 0.8rem;
+}
+
+.experience__list-icon {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
+}
