@@ -77,6 +77,11 @@ const [isActive, setActive] = useState('#')
 ```
 
 8. For cards ,use grid-template-columns
+9. If you dont want to allow copy paste
+
+```
+  /* user-select: none; */
+```
 
 ---
 
@@ -94,3 +99,7 @@ const [isActive, setActive] = useState('#')
   cursor: pointer;
 }
 ```
+
+5. Change certificates data
+6. change section classNames to container
+7. change certificate images
