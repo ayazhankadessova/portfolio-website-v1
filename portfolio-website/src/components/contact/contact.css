@@ -1,7 +1,7 @@
 .container.contact__container {
   width: 58%;
   display: grid;
-  grid-template-columns: 30% 58%;
+  grid-template-columns: 35% 58%;
   gap: 10%;
   color: var(--color-primary);
 }
@@ -16,10 +16,12 @@ h5 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
+
 .contact__options {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  justify-content: center;
 }
 
 .contact__item {
@@ -29,7 +31,7 @@ h5 {
   text-align: center;
   border: 1px solid transparent;
   transition: var(--transition);
-  /* width: fit-content; */
+  min-width: fit-content;
 }
 
 .contact__item:hover {
@@ -52,11 +54,39 @@ form {
   gap: 1.2rem;
 }
 
+form a {
+  color: black;
+}
+
 input,
 textarea {
-  width: 100%;
+  width: 100% !important;
   padding: 1.5rem;
   border-radius: 0.5rem;
   background: transparent;
   border: 2px solid var(--color-bg-variant);
+  resize: none;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: rgb(75, 130, 75);
+}
+
+/* Media Queries: Medium Devices */
+
+@media screen and (max-width: 1024px) {
+  .container.contact__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Media Queries: Small Devices */
+
+@media screen and (max-width: 600px) {
+  .container.contact__container {
+    width: var(--container-width-sm);
+  }
 }

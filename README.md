@@ -83,6 +83,65 @@ const [isActive, setActive] = useState('#')
   /* user-select: none; */
 ```
 
+10. Swiper.js
+
+For Swiping certificates: https://swiperjs.com/react
+
+- Install:
+
+```
+npm i swiper
+```
+
+- Usage:
+
+swiper/react exports 2 components: Swiper and SwiperSlide:
+
+```
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+
+export default () => {
+  return (
+    <Swiper
+      spaceBetween={50}
+      slidesPerView={3}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      <SwiperSlide>Slide 1</SwiperSlide>
+      <SwiperSlide>Slide 2</SwiperSlide>
+      <SwiperSlide>Slide 3</SwiperSlide>
+      <SwiperSlide>Slide 4</SwiperSlide>
+      ...
+    </Swiper>
+  );
+};
+```
+
+Here is the list of additional modules imports from swiper/modules:
+
+```
+Virtual - Virtual Slides module
+Keyboard - Keyboard Control module
+Mousewheel - Mousewheel Control module
+Navigation - Navigation module
+Pagination - Pagination module
+```
+
+- Demos:
+
+https://swiperjs.com/demos
+
+11. Email.js - Send Emails Directly from Javascript
+
+https://www.emailjs.com
+
+https://www.emailjs.com/docs/examples/reactjs/
+
 ---
 
 1. Fix Skills cards to be left aligned
@@ -102,4 +161,4 @@ const [isActive, setActive] = useState('#')
 
 5. Change certificates data
 6. change section classNames to container
-7. change certificate images
+7. change certificates height

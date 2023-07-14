@@ -1,9 +1,34 @@
 import React from 'react'
 import './contact.css'
 import contactData from './contact_data'
-import { MdEmail } from 'react-icons/md'
+import { useRef } from 'react'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    // Service ID, Template ID, Public key
+    emailjs
+      .sendForm(
+        'service_10o8fxi',
+        'template_mk3a1wn',
+        form.current,
+        'FPiPYm_HcDkuVi1su'
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+        },
+        (error) => {
+          console.log(error.text)
+        }
+      )
+
+    e.target.reset()
+  }
   return (
     <section id='contact'>
       <h5>Get in Touch</h5>
@@ -28,7 +53,12 @@ const Contact = () => {
         </div>
 
         {/* {END OF CONTACT OPTIONS} */}
-        <form action='' className='contact__form'>
+        <form
+          action=''
+          className='contact__form'
+          ref={form}
+          onSubmit={sendEmail}
+        >
           <input
             type='text'
             name='Name'
@@ -42,7 +72,7 @@ const Contact = () => {
             placeholder='Your Message'
             required
           ></textarea>
-          <button type='submit' className='btn btn-'>
+          <button type='submit' className='btn btn-primary'>
             Send Message
           </button>
         </form>

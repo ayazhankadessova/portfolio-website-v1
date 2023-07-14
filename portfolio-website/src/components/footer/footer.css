@@ -1,0 +1,19 @@
+footer {
+  background: var(--color-primary);
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.permalink {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.footer__socials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: var(--color-bg);
+  padding: 0 4rem;
+  margin: 2rem 0;
+  /* gap: 0.1rem; */
+}
