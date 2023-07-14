@@ -142,6 +142,8 @@ https://www.emailjs.com
 
 https://www.emailjs.com/docs/examples/reactjs/
 
+npm install @emailjs/browser --save 12. Flex-wrap: nowrap will stack things in one line
+
 ---
 
 1. Fix Skills cards to be left aligned

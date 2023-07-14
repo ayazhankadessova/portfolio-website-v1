@@ -92,7 +92,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-white);
+  color: rgb(253, 254, 255);
 }
 
 .btn {
@@ -107,14 +107,19 @@ a:hover {
 }
 
 .btn:hover {
-  background-color: var(--color-white);
+  background-color: rgb(236, 240, 244);
   color: var(--color-bg);
-  border-color: transparent;
+
+  /* border-color: transparent; */
 }
 
 .btn-primary {
   background-color: var(--color-primary);
   color: var(--color-bg);
+}
+
+.btn-primary:hover {
+  background-color: rgb(236, 240, 244);
 }
 
 img {

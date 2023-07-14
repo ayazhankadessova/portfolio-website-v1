@@ -70,9 +70,9 @@ textarea {
   font-weight: bold;
 }
 
-.btn-primary:hover {
-  background-color: rgb(75, 130, 75);
-}
+/* .btn-primary:hover {
+  background-color: rgb(253, 254, 255);
+} */
 
 /* Media Queries: Medium Devices */
 

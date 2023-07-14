@@ -7,11 +7,11 @@ import { FaGithub, FaBloggerB } from 'react-icons/fa'
 const Footer = () => {
   return (
     <footer>
-      <a href='#' className='footer__logo'>
-        Ayazhan Kadessova
+      <a href='#home' className='footer__logo'>
+        AyazhanKAD
       </a>
 
-      <ul className='permalink'>
+      <ul className='permalinks'>
         <li>
           <a href='#'>Home</a>
         </li>
