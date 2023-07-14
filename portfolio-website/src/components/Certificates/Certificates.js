@@ -1,7 +1,19 @@
 import React from 'react'
 import './certificates.css'
-import IMG1 from '../../assets/portfolio1.jpg'
 import certificates from './certificates_data'
+
+// import React, { useRef, useState } from 'react'
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+// Import Swiper styles
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
+
+// import required modules
+import { Pagination, Navigation } from 'swiper/modules'
 
 const Certificates = () => {
   return (
@@ -9,10 +21,16 @@ const Certificates = () => {
       <h5>My Learning Achievements</h5>
       <h2>Certificates</h2>
 
-      <div className='container certificates__container'>
+      <Swiper
+        className='container certificates__container'
+        pagination={{ clickable: true }}
+        modules={[Pagination, Navigation]}
+        spaceBetween={40}
+        slidesPerView={1}
+      >
         {certificates.map((props) => {
           return (
-            <article className='certificate'>
+            <SwiperSlide key={props.id} className='certificate'>
               <div className='certificate__image'>
                 <img
                   src={props.img}
@@ -24,10 +42,10 @@ const Certificates = () => {
               <small className='certificate__description'>
                 {props.description}
               </small>
-            </article>
+            </SwiperSlide>
           )
         })}
-      </div>
+      </Swiper>
     </section>
   )
 }

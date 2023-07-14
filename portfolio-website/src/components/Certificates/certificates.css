@@ -28,3 +28,23 @@
   /* top, left-right, bottom */
   margin: 0.8rem auto 0;
 }
+
+/* Media Queries: Medium Devices */
+
+@media screen and (max-width: 1024px) {
+  .container.certificates__container {
+    width: 60%;
+  }
+}
+
+/* Media Queries: Small Devices */
+
+@media screen and (max-width: 600px) {
+  .container.certificates__container {
+    width: var(--container-width-sm);
+  }
+
+  .certificate__description {
+    width: var(--container-width-sm);
+  }
+}
