@@ -1,6 +1,7 @@
 import React from 'react'
 import './contact.css'
 import contactData from './contact_data'
+import { MdEmail } from 'react-icons/md'
 
 const Contact = () => {
   return (
@@ -13,18 +14,11 @@ const Contact = () => {
           {contactData.map((props) => {
             return (
               <article key={props.id} className='contact__item'>
-                {/* <div className='contact__item-image'>
-                  <img src={props.img} alt={props.title} />
-                </div> */}
-                <h3>{props.title}</h3>
-                <h4>{props.text}</h4>
+                <div className='contact__icon'>{props.icon}</div>
+                <h4>{props.title}</h4>
+                <h5>{props.text}</h5>
                 <div className='contact__item-links'>
-                  <a
-                    href={props.link}
-                    className='btn btn-primary'
-                    target='_blank'
-                    rel='noreferrer'
-                  >
+                  <a href={props.link} target='_blank' rel='noreferrer'>
                     Send a message
                   </a>
                 </div>
@@ -34,7 +28,24 @@ const Contact = () => {
         </div>
 
         {/* {END OF CONTACT OPTIONS} */}
-        <form action=''>HEY</form>
+        <form action='' className='contact__form'>
+          <input
+            type='text'
+            name='Name'
+            placeholder='Your Full Name'
+            required
+          />
+          <input type='email' name='Email' placeholder='Your Email' required />
+          <textarea
+            name='message'
+            rows='7'
+            placeholder='Your Message'
+            required
+          ></textarea>
+          <button type='submit' className='btn btn-'>
+            Send Message
+          </button>
+        </form>
       </div>
     </section>
   )
