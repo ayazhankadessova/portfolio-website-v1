@@ -7,7 +7,8 @@ const certificates = [
     id: 1,
     title: 'AWS Machine Learning Foundations',
     img: IMG2,
-    description: 'Lorem Ipsum is Lorem Ipsum but was popular.',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque exercitationem vel repellendus odit non blanditiis explicabo voluptatem nulla temporibus, nostrum libero.',
     technologies: 'React',
     link: 'https://github.com/',
   },

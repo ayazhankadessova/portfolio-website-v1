@@ -23,7 +23,7 @@ const Certificates = () => {
 
       <Swiper
         className='container certificates__container'
-        pagination={{ clickable: true }}
+        pagination={true}
         modules={[Pagination, Navigation]}
         spaceBetween={40}
         slidesPerView={1}
@@ -32,11 +32,7 @@ const Certificates = () => {
           return (
             <SwiperSlide key={props.id} className='certificate'>
               <div className='certificate__image'>
-                <img
-                  src={props.img}
-                  alt='Certificate'
-                  className='certificate-img'
-                />
+                <img src={props.img} />
               </div>
               <h5 className='certificate__name'>{props.title}</h5>
               <small className='certificate__description'>

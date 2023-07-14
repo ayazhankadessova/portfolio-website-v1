@@ -1,32 +1,45 @@
 .container.certificates__container {
   width: 40%;
+  padding-bottom: 4rem;
 }
 
 .certificate__image {
-  /* padding-top: 1rem; */
-  width: 6rem;
-  /* aspect-ratio: 1/1; */
+  width: 4rem;
+  aspect-ratio: 1/1;
   overflow: hidden;
   border-radius: 50%;
   margin: 0 auto 1rem;
-  border: 0.4rem solid var(--color-primary-variant);
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .certificate {
   background: var(--color-bg-variant);
+  height: 4rem;
   text-align: center;
   padding: 2rem;
   border-radius: 2rem;
-  /* user-select: none; */
+  user-select: none;
+  height: 4rem;
+  /* width: var(--container-width-lg); */
 }
 
 .certificate__description {
   color: white;
   font-weight: 300;
   display: block;
-  width: 80%;
+  width: 90%;
   /* top, left-right, bottom */
   margin: 0.8rem auto 0;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet {
+  background: var(--color-light);
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: white;
 }
 
 /* Media Queries: Medium Devices */
