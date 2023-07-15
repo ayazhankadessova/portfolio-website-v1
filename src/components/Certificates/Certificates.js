@@ -2,7 +2,6 @@ import React from 'react'
 import './certificates.css'
 import certificates from './certificates_data'
 
-// import React, { useRef, useState } from 'react'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
 

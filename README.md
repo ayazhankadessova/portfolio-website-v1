@@ -221,6 +221,6 @@ npm install @emailjs/browser --save 12. Flex-wrap: nowrap will stack things in o
 5. Change certificates data
 6. change section classNames to container
 7. change certificates height
-8. update Pictur
+8. update Pictures
 
 ---

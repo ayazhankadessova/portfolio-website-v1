@@ -2,7 +2,6 @@ import React from 'react'
 import './header.css'
 import Action from './Action.js'
 import HeaderSocials from './HeaderSocials.js'
-import Me from '../../assets/me.png'
 
 const Header = () => {
   return (
