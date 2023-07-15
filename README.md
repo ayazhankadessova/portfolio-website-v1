@@ -55,7 +55,7 @@ Helped 50 HKBU students learn Saving and Budgeting, Investing via quizes, readin
 
 ## My Notes
 
-## SHortcuts
+## Shortcuts
 
 > rafce -> bootstrap .js
 
