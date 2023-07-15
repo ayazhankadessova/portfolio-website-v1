@@ -1,6 +1,6 @@
 ## TODO
 
-1. Add logo for the website : smath like "Ayazhankad"
+1. Add logo for the website : smth like "Ayazhankad"
 2. Featured Projects:
 
 - Info about all the projects is here: https://github.com/ayazhankadessova/Portfolio-Projects
