@@ -31,7 +31,7 @@ const Skills = () => {
         {/* Break */}
 
         <div className='skills__sre'>
-          <h3>Frontend/Backend development</h3>
+          <h3>SRE/Cloud/Others</h3>
 
           <div className='skills__content'>
             {skills2.map((props) => {
