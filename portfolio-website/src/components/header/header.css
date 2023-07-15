@@ -1,5 +1,5 @@
 header {
-  height: 100vh;
+  height: 100%;
   padding-top: 7rem;
   overflow: hidden;
 }
@@ -13,10 +13,10 @@ header {
 /* Action */
 
 .Action {
-  margin-top: 2.5rem;
   display: flex;
-  gap: 1rem;
   justify-content: center;
+  gap: 1.2rem;
+  margin-top: 2.5rem;
 }
 
 /* Socials - left middle*/
@@ -27,8 +27,8 @@ header {
   align-items: center;
   gap: 0.8rem;
   position: absolute;
-  left: 0;
-  bottom: 3rem;
+  left: 5rem;
+  bottom: 1rem;
 }
 
 /* line after socials */
@@ -42,7 +42,7 @@ header {
 
 /* ME */
 
-.me {
+/* .me {
   background: linear-gradient(var(--color-primary), transparent);
   width: 22rem;
   height: 35rem;
@@ -52,7 +52,7 @@ header {
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
   padding: 5rem 1.5rem 1.5rem 1.5rem;
-}
+} */
 
 /* Scroll Down */
 

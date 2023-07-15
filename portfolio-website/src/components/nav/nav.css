@@ -21,14 +21,13 @@ nav a {
   font-size: 1.2rem;
   border-radius: 50%;
   display: flex;
-  color: var(--color-primary);
+  color: rgb(210, 210, 210);
 }
 
 nav a:hover {
   background: rgba(0, 0, 0, 0.3);
 }
-
 nav a.active {
-  background: var(--color-bg);
-  color: var(--color-white);
+  background: var(--color-text);
+  color: var(--color-bg);
 }

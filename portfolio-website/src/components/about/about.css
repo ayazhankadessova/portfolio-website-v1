@@ -44,6 +44,12 @@
   gap: 2rem;
 }
 
+.about__card > h5,
+small {
+  /* color: white; */
+  font-weight: bold;
+}
+
 /* for every card */
 .about__card {
   background: var(--color-bg-variant);
@@ -72,7 +78,7 @@
 
 .about__icon {
   font-size: 1.5rem;
-  color: var(--color-text);
+  color: white;
   margin-bottom: 0.2rem;
 }
 

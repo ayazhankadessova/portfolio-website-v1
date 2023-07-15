@@ -26,7 +26,7 @@ const Certificates = () => {
         pagination={true}
         modules={[Pagination, Navigation]}
         spaceBetween={40}
-        slidesPerView={1}
+        slidesPerView={2}
       >
         {certificates.map((props) => {
           return (
