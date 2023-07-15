@@ -1,6 +1,6 @@
 ## TODO
 
-1. Add logo for the website : smath like "Ayazhankad"
+1. Add logo for the website : smth like "Ayazhankad"
 2. Featured Projects:
 
 - Info about all the projects is here: https://github.com/ayazhankadessova/Portfolio-Projects
@@ -55,7 +55,7 @@ Helped 50 HKBU students learn Saving and Budgeting, Investing via quizes, readin
 
 ## My Notes
 
-## SHortcuts
+## Shortcuts
 
 > rafce -> bootstrap .js
 
