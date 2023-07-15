@@ -7,8 +7,8 @@ import Experience from './components/experience/Experience'
 import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
-import Certificates from './components/certificates/Certificates'
-import Awards from './components/awards/Awards'
+import Certificates from './components/Certificates/Certificates'
+import Awards from './components/Awards/Awards'
 
 function App() {
   return (
