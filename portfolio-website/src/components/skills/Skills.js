@@ -1,6 +1,8 @@
 import React from 'react'
 import './skills.css'
 import { BsFillPatchCheckFill } from 'react-icons/bs'
+import skills from './skills_data'
+import skills2 from './skills2_data'
 
 const Skills = () => {
   return (
@@ -12,49 +14,17 @@ const Skills = () => {
         <div className='skills__frontbackend'>
           <h3>Frontend/Backend development</h3>
           <div className='skills__content'>
-            <article className='skills__details'>
-              <BsFillPatchCheckFill className='skills__details-icon' />
-              <div>
-                <h4>Java</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-
-            <article className='skills__details'>
-              <BsFillPatchCheckFill className='skills__details-icon' />
-              <div>
-                <h4>Python</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='skills__details'>
-              <BsFillPatchCheckFill className='skills__details-icon' />
-              <div>
-                <h4>SQL</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='skills__details'>
-              <BsFillPatchCheckFill className='skills__details-icon' />
-              <div>
-                <h4>JavaScript</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='skills__details'>
-              <BsFillPatchCheckFill className='skills__details-icon' />
-              <div>
-                <h4>React</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='skills__details'>
-              <BsFillPatchCheckFill className='skills__details-icon' />
-              <div>
-                <h4>TypeScript</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
+            {skills.map((props) => {
+              return (
+                <article key={props.id} className='skills__details'>
+                  <BsFillPatchCheckFill className='skills__details-icon' />
+                  <div>
+                    <h4>{props.title}</h4>
+                    <small className='text-light'>{props.level}</small>
+                  </div>
+                </article>
+              )
+            })}
           </div>
         </div>
 
@@ -62,50 +32,19 @@ const Skills = () => {
 
         <div className='skills__sre'>
           <h3>Frontend/Backend development</h3>
-          <div className='skills__content'>
-            <article className='skills__details'>
-              <BsFillPatchCheckFill className='skills__details-icon' />
-              <div>
-                <h4>Java</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
 
-            <article className='skills__details'>
-              <BsFillPatchCheckFill className='skills__details-icon' />
-              <div>
-                <h4>Python</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='skills__details'>
-              <BsFillPatchCheckFill className='skills__details-icon' />
-              <div>
-                <h4>SQL</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='skills__details'>
-              <BsFillPatchCheckFill className='skills__details-icon' />
-              <div>
-                <h4>JavaScript</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='skills__details'>
-              <BsFillPatchCheckFill className='skills__details-icon' />
-              <div>
-                <h4>React</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='skills__details'>
-              <BsFillPatchCheckFill className='skills__details-icon' />
-              <div>
-                <h4>TypeScript</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
+          <div className='skills__content'>
+            {skills2.map((props) => {
+              return (
+                <article key={props.id} className='skills__details'>
+                  <BsFillPatchCheckFill className='skills__details-icon' />
+                  <div>
+                    <h4>{props.title}</h4>
+                    <small className='text-light'>{props.level}</small>
+                  </div>
+                </article>
+              )
+            })}
           </div>
         </div>
       </div>

@@ -31,10 +31,10 @@ const Footer = () => {
           <a href='#certificates'>Certificates</a>
         </li>
         <li>
-          <a href='#contact'>Contact</a>
+          <a href='#awards'>Awards</a>
         </li>
         <li>
-          <a href='#awards'>Awards</a>
+          <a href='#contact'>Contact</a>
         </li>
       </ul>
 

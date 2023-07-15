@@ -35,6 +35,12 @@
   transition: var(--transition);
 }
 
+br {
+  display: block; /* makes it have a width */
+  content: ''; /* clears default height */
+  margin-top: 1rem; /* change this to whatever height you want it */
+}
+
 /* right side */
 
 /* 3 cards */

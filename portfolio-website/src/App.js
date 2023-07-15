@@ -8,6 +8,7 @@ import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import Certificates from './components/Certificates/Certificates'
+import Awards from './components/Awards/Awards'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Experience />
       <Portfolio />
       <Certificates />
+      <Awards />
       <Contact />
       <Footer />
     </>

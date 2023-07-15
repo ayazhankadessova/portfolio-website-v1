@@ -2,14 +2,30 @@ header {
   height: 100%;
   padding-top: 7rem;
   overflow: hidden;
+  /* justify-content: center; */
 }
 
+.about-mee {
+  width: 35rem;
+  margin-left: calc(40% - 11rem);
+  color: var(--color-light);
+}
+
+.about-me {
+  color: var(--color-light);
+}
 .header__container {
   text-align: center;
   height: 100%;
+  max-width: 900px;
   position: relative;
+  text-align: center;
+  justify-content: center;
 }
 
+.header__container > h4 {
+  color: var(--color-light);
+}
 /* Action */
 
 .Action {
@@ -75,6 +91,13 @@ header {
 
   section {
     margin-top: 6rem;
+  }
+
+  .about-mee {
+    width: 35rem;
+    /* margin-left: calc(40% - 11rem); */
+    padding-left: 5rem;
+    padding-right: 7rem;
   }
 }
 

@@ -1,9 +1,3 @@
-.container.certificates__container {
-  width: 40%;
-  /* aspect-ratio: 1/0.4; */
-  padding-bottom: 4rem;
-}
-
 .certificate__image {
   width: 4rem;
   aspect-ratio: 1/1;
@@ -17,12 +11,11 @@
 
 .certificate {
   background: var(--color-bg-variant);
-  height: 4rem;
+  /* height: 4rem; */
   text-align: center;
   padding: 2rem;
   border-radius: 2rem;
   user-select: none;
-  height: 4rem;
   /* width: var(--container-width-lg); */
 }
 
@@ -36,7 +29,7 @@
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet {
-  background: var(--color-light);
+  background: white;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {

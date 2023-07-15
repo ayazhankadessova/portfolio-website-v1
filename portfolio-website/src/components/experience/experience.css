@@ -49,11 +49,19 @@
   gap: 0.7rem;
   margin-bottom: 0.8rem;
 }
+.experience__title {
+  /* text-decoration: underline; */
+  color: var(--color-primary);
+}
 
 .experience__list-icon {
   color: var(--color-primary);
   font-size: 1.2rem;
   margin-top: 0.2rem;
+}
+
+.experience__link {
+  text-decoration: underline;
 }
 
 /* Media Queries: Medium Devices */
