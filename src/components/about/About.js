@@ -55,7 +55,7 @@ const About = () => {
             own redeployable environment & bootstrapped it with it with Docker
             for future projects. <br />
             I am also passionate about sharing my knowledge. My favorite event
-            organized as a Women Techmakers Ambassafor at Google is a web
+            organized as a Women Techmakers Ambassador at Google is a web
             scraping workshop at HKBU with 100 participants. I have also
             mentored students in CS and Data Science at HKBU and Qwasar Silicon
             Valley Tech Talents Training.
