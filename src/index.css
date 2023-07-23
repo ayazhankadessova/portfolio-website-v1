@@ -16,7 +16,7 @@ https://colorhunt.co/palette/c2dedcece5c7cdc2ae116a7b
 
 :root {
   --color-bg: rgb(68, 68, 68);
-  --color-bg-variant: rgb(194, 222, 223, 0.4);
+  --color-bg-variant: rgba(147, 165, 166, 0.4);
   --color-primary: rgb(205, 194, 174);
   --color-primary-variant: rgb(236, 229, 199, 0.4);
   --color-dark: rgb(17, 106, 123);
