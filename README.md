@@ -7,7 +7,7 @@
   Name of the project
   description
   Picture
-  Tech stack (if my repo doesnt say, you can text me)
+  Tech stack 
 
 two buttons : for repo & for live version.
 
@@ -134,7 +134,7 @@ const [isActive, setActive] = useState('#')
 ```
 
 8. For cards ,use grid-template-columns
-9. If you dont want to allow copy paste
+9. If  dont want to allow copy paste
 
 ```
   /* user-select: none; */
